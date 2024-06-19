@@ -115,7 +115,7 @@ li {
 /*=================================
   main styling starts here
 =================================*/
-classes-list {
+.classes-list {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
