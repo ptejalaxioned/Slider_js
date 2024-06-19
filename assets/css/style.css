@@ -53,7 +53,6 @@ strong {
 em { font-style: italic; }
 
 img {
-  width: 100%;
   border: 0;
   vertical-align: middle;
 }
@@ -115,11 +114,14 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+.list{
+overflow: hidden;
+}
 .classes-list {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: inline-flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -130,7 +132,6 @@ li {
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
   width: 100%;
-  overflow-x:hidden
 }
 .common-div {
   width: 363px;
