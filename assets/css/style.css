@@ -115,7 +115,79 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+classes-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  width: 100%;
+  overflow-x:hidden
+}
+.common-div {
+  width: 363px;
+  padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 17px;
+}
+.classes .common-div { margin-left: 21%; }
 
+.next-previous {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+.next-previous span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-indent: -9999px;
+}
+
+.next-previous span::before {
+  padding-top: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  font-family: FontAwesome;
+  font-size: 16px;
+  font-weight: 900;
+  text-indent: 0px;
+  transform: translate(-50%,-50%);
+}
+
+.classes-list li{ width: 25%; }
+figure{ width: 100%; }
+
+.previous::before {
+ content: "\3c";
+ left: 2%;
+}
+
+.next::before {
+ content: "\3e";
+ right: 2%;
+}
 /*=================================
   main styling ends here
 =================================*/
